@@ -3,9 +3,9 @@
 1. Next JS
 2. Apollo
 3. Graphql
-4. Redux/toolkit
-5. NodeJS / Express
-
+4. NodeJS / NestJS
+5. React
+6. Typescript
 
 **My Social Links**.\
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:korpeevaslan@gmail.com)\
