@@ -16,6 +16,10 @@ export const theme = createTheme({
     btnColor: {
       main: "#f9f9f9",
       contrastText: '#282828'
+    },
+    cardBtnColor: {
+      main: '#f3f3f3',
+      contrastText: '#282828'
     }
 
   },

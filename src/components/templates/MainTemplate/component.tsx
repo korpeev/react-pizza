@@ -3,13 +3,12 @@ import {Container} from '@mui/material'
 import {FC} from "react";
 
 export const MainTemplate:FC = ({children}) => {
-    return <Box component='main' p={3} bgcolor={(props) => props.palette.bgColor.main} sx={{
-        height: '100vh',
+    return <Box component='main' py={5} bgcolor={(props) => props.palette.bgColor.main} sx={{
+        height: '100%',
     }}>
-        <Container>
-            <Box component='div' padding={5} bgcolor='white' sx={{
+        <Container maxWidth='lg'>
+            <Box component='div' px={4} py={5} position='relative' bgcolor='white' sx={{
                 borderRadius: '10px',
-                height: 'calc(100vh - 80px)'
             }}>
                 {children}
             </Box>
