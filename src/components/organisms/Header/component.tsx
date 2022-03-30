@@ -2,8 +2,13 @@ import { Box, useTheme } from "@mui/system";
 import Image from "next/image";
 import { Typography, useMediaQuery } from "@mui/material";
 import { CartButton } from "components/moleculas/CartButton";
+import { FC } from "react";
 
-export const Header = () => {
+type Props = {
+  isCartPage?: boolean;
+};
+
+export const Header: FC<Props> = ({ isCartPage }) => {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("sm"));
   return (
@@ -32,7 +37,7 @@ export const Header = () => {
           </Typography>
         </Box>
       </Box>
-      <CartButton countItems={2} sumItems={500} />
+      {!isCartPage && <CartButton countItems={2} sumItems={500} />}
     </Box>
   );
 };
